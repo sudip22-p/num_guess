@@ -130,6 +130,9 @@ div.remarks{
       button#submit{
         margin-bottom: 0%;
     }
+    div.inputGuess{
+    flex-direction: row;
+    }
     div.guessedHistory{
         margin-top: -3%;
         gap: 5%;
@@ -142,7 +145,7 @@ div.remarks{
         font-size: 18px;
     }
     div.guessedHistory{
-        flex-direction: column;
+        flex-direction: row;
     }
     span.greenClr{
         font-size: 16px;
