@@ -6,6 +6,9 @@ let inc=document.getElementById("incrementBtn");
 let dec=document.getElementById("decrementBtn");
 let value=1;
 document.getElementById("myGuess").value=value;
+document.getElementById("myGuess").addEventListener("input",()=>{
+    value=document.getElementById("myGuess").value;
+});
 let guesses = [];
 function storeGuess(guess) {
   guesses.push(guess);
