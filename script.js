@@ -2,6 +2,10 @@ let submitBtn=document.getElementById("submit");
 let remarks=document.getElementById("remark");
 let numOfGuess=document.getElementById("guessedCount");
 let lastFive=document.getElementById("lastFiveHistory");
+let inc=document.getElementById("incrementBtn");
+let dec=document.getElementById("decrementBtn");
+let value=1;
+document.getElementById("myGuess").value=value;
 let guesses = [];
 function storeGuess(guess) {
   guesses.push(guess);
@@ -12,6 +16,18 @@ function storeGuess(guess) {
 }
 let randomNumber = Math.floor(Math.random() * 100) + 1;
 var guessedCount=0;
+inc.addEventListener("click",()=>{
+    if(value<100){
+        value++;
+    }
+    document.getElementById("myGuess").value=value;
+});
+dec.addEventListener("click",()=>{
+    if(value>1){
+        value--;
+    }
+    document.getElementById("myGuess").value=value;
+});
 submitBtn.addEventListener("click",()=>{
     let getNum=document.getElementById("myGuess").value;
     if(getNum==""){
