@@ -164,7 +164,7 @@ div.remarks{
         letter-spacing: normal;
     }
 }
-@media (max-width:310px) {
+@media (max-width:512px) {
     div.inputHaru{
         display: flex;
         height: 100%;
