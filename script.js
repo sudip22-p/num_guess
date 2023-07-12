@@ -31,6 +31,18 @@ dec.addEventListener("click",()=>{
     }
     document.getElementById("myGuess").value=value;
 });
+inc.addEventListener("dblclick",()=>{
+    if(value<90){
+        value=value+10;
+    }
+    document.getElementById("myGuess").value=value;
+});
+dec.addEventListener("dblclick",()=>{
+    if(value>10){
+        value=value-10;
+    }
+    document.getElementById("myGuess").value=value;
+});
 submitBtn.addEventListener("click",()=>{
     let getNum=document.getElementById("myGuess").value;
     if(getNum==""){
